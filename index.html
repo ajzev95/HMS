@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/fontAwesome.css">-->
+    <!--inicio link css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--inicio link js-->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sweetalert.js"></script>
+    
+    <title>HomePage</title>
+    <link rel="icon" href="img/logoo.png" type="image/png">
+</head>
+<body>
+    
+    <!--inicio nav-->
+    <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-white">
+        <div class="container-fluid">
+            <img src="img/logo1.png" class="rounded-circle" width="60" alt="">
+            <a href="#" class="mx-1 text-white navbar-brand">
+                HMS
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="myMenu">
+                <ul class="navbar-nav w-100  justify-content-end">
+                    <li class="nav-item fw-bold text-white">
+                        AJCODE
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--final nav-->
+
+    <!--inicio header-->
+    <br><br><br><br>
+    <div class="container mt-6">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- #region nav tab-->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#signup" class="nav-link" data-bs-toggle="tab">
+                            Sign Up
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="nav-link active" data-bs-toggle="tab">
+                            login
+                            <i class="fa-solid fa-user-plus"></i>   
+                        </a>
+                    </li>
+                </ul>
+                <!-- #region nav panes-->
+                <div class="tab-content">
+                    <div class="tab-pane container mt-3" id="signup">
+                        <form class="reg-form">
+                            <br>
+                            <input required name="fullname" type="text" placeholder="Full Name" class="form-control mb-3">
+                            <input required name="hotelName" type="text" placeholder="Hotel Name" class="form-control mb-3">
+                            <input required name="totalRoom" type="number" placeholder="No Of Hotels Room" class="form-control mb-3">
+                            <input required name="mobile" type="number" placeholder="Mobile" class="form-control mb-3">
+                            <input required name="email" type="email" placeholder="Email" class="form-control mb-3">
+                            <input required name="password" type="password" placeholder="Password" class="form-control mb-3">
+                            <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-floppy-disk"></i> Register</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane active container mt-3" id="login">
+                        <form class="login-form">
+                            <br><br>
+                            <input type="email" placeholder="Email" class="form-control mb-3">
+                            <input type="password" placeholder="Password" class="form-control mb-3">
+                            <button type="submit" class="btn btn-dark w-100"><i class="fa-solid fa-share-from-square"></i> Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- #region carousel-->
+            <div class="d-flex justify-content-center align-item-center col-md-6 mt-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner mt-3">
+                        <div class="carousel-item active">
+                            <img src="img/f1.jpg" class="d-block w-100" alt="Hotel 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/f3.jpg" class="d-block w-100" alt="Hotel 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/f4.jpg" class="d-block w-100" alt="Hotel 4">
+                        </div>
+                    </div>
+                    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--final header-->
+
+    <!--inicio js link-->
+    <script src="js/index.js"></script>
+    <!--final js link-->
+</body>
+</html>
+<!--video 7-->
